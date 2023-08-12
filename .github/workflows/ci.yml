@@ -4,6 +4,11 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch: # Add this block for manual triggering
+    inputs:
+      parameter_name: # Define any input parameters you want to provide
+        description: Description of the input parameter
+        required: true
 
 jobs:
   simple:
